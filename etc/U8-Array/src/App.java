@@ -1,5 +1,6 @@
+import java.util.*;
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
 
         // Creating 2d array
         int[][] twoDArrays = {{1,3,4}, 
@@ -30,5 +31,19 @@ public class App {
             }
             System.out.println();
         }
+
+        /*
+         * Since we know Arraylist are resizable
+         * => Don't need to specify the length of the list
+         * Use the loops from creating from t
+         */
+        ArrayList bob = new ArrayList();
+        int size = 10;
+        for(int i = 0; i < size + 1; i++){
+            bob.add(i);
+        }
+        System.out.println(bob);
+
+
     }
 }
